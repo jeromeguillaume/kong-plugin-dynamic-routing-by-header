@@ -22,11 +22,11 @@ This Kong plugin adds a Header (depending on the Authorization header of the Con
       - Paths: `/httpbin`
       - Headers: `X-Dynamic-Route: Bearer`
 5) Authentication: `Basic`
-  - Add a `Basic Authentication` plugin to `httpbin_basic` Route
-  - Create a consumer with a Basic Auth. Username/password: `client1/secret1`
+    - Add a `Basic Authentication` plugin to `httpbin_basic` Route
+    - Create a consumer with a Basic Auth. Username/password: `client1/secret1`
 6) Authentication: `OIDC`
-  - Add an `OpenID Connect` plugin to `httpbin_oidc` Route
-  - Declare a Client ID in your IDP Server
+    - Add an `OpenID Connect` plugin to `httpbin_oidc` Route
+    - Declare a Client ID in your IDP Server
   
 ## Test the Kong plugin
 Install [httpie](https://httpie.io/) tool.
